@@ -607,5 +607,23 @@ button:focus {
     width: 50%;
   }
 }
-
+.page-banner {
+  background-size: cover;
+  background-position: center center;
+  position: relative; }
+  .page-banner.standard {
+    background-image: url("../imgages/banner.png"); }
+.page-banner--title {
+  display: block;
+  font-weight: 100;
+  text-align: left;
+  width: 100%;
+  padding: 35px 0 25px 0; }
+  .page-banner--title h1 {
+    border-bottom: none;
+    font-size: 2.55rem;
+    color: #FFFFFF;
+    font-weight: 100;
+    margin: 0.84rem 0;
+    padding: 0; }
 
