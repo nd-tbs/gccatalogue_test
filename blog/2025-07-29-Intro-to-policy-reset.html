@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <meta name="description" content="This blog is a sharing of experiences and learning about the Digital Policy reset.">
+    <meta name="keywords" content="blog, gc policy, GCcatalogue, digital policy, canada policy, canada digital, Government of Canada, federal government, policy catalogue of Canada">
+    <meta property="og:title" content="Blog - Digital Policy Reset | Blogue - Refonte de la politique numérique">
+    <meta property="og:description" content="This blog is a sharing of experiences and learning about the Digital Policy reset with the goal of setting conditions to deliver secure, easy-to-use and trustworthy government services.">
+  
+  <title>Blog - Digital Policy Reset</title>
+  <link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" type="image/x-icon">
+
+    <!---------- GC Design System Utility ---------->
+    <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of the GC Design System utility framework. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-utility/blob/main/CHANGELOG.md -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@1.9.2/dist/gcds-utility.min.css"
+    />
+
+    <!---------- GC Design System Components ---------->
+    <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of GC Design System Components. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-components/blob/main/CHANGELOG.md -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@1.9.2/dist/gcds/gcds.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@1.9.2/dist/gcds/gcds.esm.js"
+    ></script>
+
+    <!-- Custom styles -->
+    <!-- TODO: If needed, uncomment and link your custom CSS file here. -->
+    <link href="styles/css.css" rel="stylesheet">
+    <link href="styles/css_002.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!---------- Header ---------->
+    <!-- TODO: Modify the lang-href to set the language toggle's URL. -->
+    <!-- TODO: Update the skip-to-href with the main content container's id. -->
+    <gcds-header lang-href="en" skip-to-href="#main-content">
+      <!-- The slot="search" attribute adds the search component to the header. -->
+      <gcds-search slot="search"></gcds-search>
+
+      <!-- The slot="breadcrumb" attribute adds the breadcrumbs component to the header. -->
+      <gcds-breadcrumbs slot="breadcrumb">
+        <!-- TODO: Adjust the breadcrumb links with the correct ones for your site. -->
+        <gcds-breadcrumbs-item href="https://gccatalogue.alpha.canada.ca/index.html">GC Catalogue</gcds-breadcrumbs-item>
+        <gcds-breadcrumbs-item href="https://nd-tbs.github.io/gccatalogue_test/blog/policyreset_en.html">Blog</gcds-breadcrumbs-item>
+      </gcds-breadcrumbs>
+    </gcds-header>
+
+    <!---------- Main content ---------->
+    <!-- TODO: Confirm the id matches the "skip-to-href" id in the header. -->
+    <gcds-container
+      id="main-content"
+      main-container
+      size="xl"
+      centered
+      tag="main"
+    >
+      <!-- TODO: Update the heading and text content. -->
+      <section>
+        <gcds-heading tag="h1">Modernizing Digital Policy to Better Serve Canadians</gcds-heading>
+        <gcds-text>
+          Modernizing Digital Policy to Better Serve Canadians
+        </gcds-text>
+      </section>
+
+      <section>
+        <gcds-heading tag="h2">Why we’re updating the policy</gcds-heading>
+        <gcds-text>
+         The Government of Canada is resetting the Policy on Service and Digital (PSD) to create a modern, coherent approach that ensures public services are trusted, accessible and focused on outcomes that matter to Canadians.
+         Current outdated rules and siloed systems often lead to delays, confusion, or services that don’t meet people’s needs. This reset is about fixing that.
+         We’re creating a new approach that makes public services more responsive, inclusive, and easier to use — especially when people need them most
+        </gcds-text>
+      </section>
+
+     <section>
+        <gcds-heading tag="h2">What’s changing</gcds-heading>
+        <gcds-text>
+         This new approach will:
+          <li>Replace the current one-size-fits-all policy with a clearer, modular framework that sets out requirements for how we deliver programs and services, manage technology, steward data, and build the right workforce.</li>
+          <li>Embed the digital principles – like transparency, trust and equity – directly into policy so they are enforceable and not just aspiration.</li>
+          <li>Modernize measurement, moving beyond checklists to focus on whether services actually work for people, improve trust, and deliver public value.</li>
+          <li>Include a stronger focus on designing with users, removing barriers, and improving access for people with different needs.</li>
+        </gcds-text>
+      </section>
+
+      <section>
+        <gcds-heading tag="h2">Benefits for Canadians</gcds-heading>
+        <gcds-text>
+         The policy reset will make it easier to get the help you need — no matter how or where you access services.
+         
+          You can expect:
+          <li><b>Faster, simpler, more inclusive services</b>, especially when time or clarity matters most</li>
+          <li><b>More consistent experiences</b>, with departments working together rather than in silos</li>
+          <li><b>Stronger privacy and data protections</b>, with better transparency about how information is used</li>
+          <li><b>Smarter use of shared platforms</b>, so services are easier to connect and update across government</li>
+         
+          It puts people at the centre of service design, removes barriers, and ensures that internal systems, data, and technology work together to deliver quality services. It also clarifies roles and responsibilities so departments are better connected, more accountable, and able to deliver faster, simpler, more inclusive services — especially when Canadians need them most.
+        </gcds-text>
+      </section>
+
+      
+      <!-- TODO: Update the date to reflect the page's most recent change. -->
+      <gcds-date-modified>2025-07-29</gcds-date-modified>
+    </gcds-container>
+
+    <!---------- Footer ---------->
+    <!-- TODO: Update or remove the contextual footer heading and links as needed. -->
+    <gcds-footer
+      display="full"
+      contextual-heading="Office of the Chief Information Officer"
+      contextual-links='{ "Why GC Notify": "#","Features": "#", "Activity on GC Notify": "#"}'
+    >
+    </gcds-footer>
+  </body>
+</html>
