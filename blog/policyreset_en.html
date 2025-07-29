@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <meta name="description" content="This blog is a sharing of experiences and learning about the Digital Policy reset.">
+    <meta name="keywords" content="blog, gc policy, GCcatalogue, digital policy, canada policy, canada digital, Government of Canada, federal government, policy catalogue of Canada">
+    <meta property="og:title" content="Blog - Digital Policy Reset | Blogue - Refonte de la politique numérique">
+    <meta property="og:description" content="This blog is a sharing of experiences and learning about the Digital Policy reset with the goal of setting conditions to deliver secure, easy-to-use and trustworthy government services.">
+  
+  <title>Blog - Digital Policy Reset</title>
+  <link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" type="image/x-icon">
+
+    <!---------- GC Design System Utility ---------->
+    <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of the GC Design System utility framework. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-utility/blob/main/CHANGELOG.md -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@1.9.2/dist/gcds-utility.min.css"
+    />
+
+    <!---------- GC Design System Components ---------->
+    <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of GC Design System Components. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-components/blob/main/CHANGELOG.md -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@1.9.2/dist/gcds/gcds.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@1.9.2/dist/gcds/gcds.esm.js"
+    ></script>
+
+    <!-- Custom styles -->
+    <!-- TODO: If needed, uncomment and link your custom CSS file here. -->
+    <link href="styles/css.css" rel="stylesheet">
+    <link href="styles/css_002.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!---------- Header ---------->
+    <!-- TODO: Modify the lang-href to set the language toggle's URL. -->
+    <!-- TODO: Update the skip-to-href with the main content container's id. -->
+    <gcds-header lang-href="en" skip-to-href="#main-content">
+      <!-- The slot="search" attribute adds the search component to the header. -->
+      <gcds-search slot="search"></gcds-search>
+
+      <!-- The slot="breadcrumb" attribute adds the breadcrumbs component to the header. -->
+      <gcds-breadcrumbs slot="breadcrumb">
+        <!-- TODO: Adjust the breadcrumb links with the correct ones for your site. -->
+        <gcds-breadcrumbs-item href="https://gccatalogue.alpha.canada.ca/index.html">GC Catalogue</gcds-breadcrumbs-item>
+        <gcds-breadcrumbs-item href="https://nd-tbs.github.io/gccatalogue_test/blog/policyreset_en.html">Blog</gcds-breadcrumbs-item>
+      </gcds-breadcrumbs>
+    </gcds-header>
+
+    <!---------- Main content ---------->
+    <!-- TODO: Confirm the id matches the "skip-to-href" id in the header. -->
+    <gcds-container
+      id="main-content"
+      main-container
+      size="xl"
+      centered
+      tag="main"
+    >
+      <!-- TODO: Update the heading and text content. -->
+      <section>
+        <gcds-heading tag="h1">Blog - Digital Policy Reset</gcds-heading>
+        <gcds-text>
+          Exploring how we are updating service and digital policy to better meet the needs of everyone. 
+          These posts share insights on cutting unnecessary barriers, improving access for all, and developing shared digital tools across government.
+        </gcds-text>
+      </section>
+
+      <section>
+        <gcds-heading tag="h2">Modernizing Digital Policy to Better Serve Canadians</gcds-heading>
+        <gcds-text>
+         A new approach to make public services simpler, faster, and better for people.
+          <gcds-button href="#">
+             Read more
+           </gcds-button>
+        </gcds-text>
+      </section>
+
+      <!-- TODO: Update the date to reflect the page's most recent change. -->
+      <gcds-date-modified>2025-07-29</gcds-date-modified>
+    </gcds-container>
+
+    <!---------- Footer ---------->
+    <!-- TODO: Update or remove the contextual footer heading and links as needed. -->
+    <gcds-footer
+      display="full"
+      contextual-heading="Office of the Chief Information Officer"
+      contextual-links='{ "Why GC Notify": "#","Features": "#", "Activity on GC Notify": "#"}'
+    >
+    </gcds-footer>
+  </body>
+</html>
