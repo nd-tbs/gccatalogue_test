@@ -12,36 +12,21 @@
   <title>Blog - Digital Policy Reset</title>
   <link rel="shortcut icon" href="https://www.canada.ca/etc/designs/canada/wet-boew/assets/favicon.ico" type="image/x-icon">
 
-    <!---------- GC Design System Utility ---------->
-    <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of the GC Design System utility framework. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-utility/blob/main/CHANGELOG.md -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@1.9.2/dist/gcds-utility.min.css"
-    />
+  <!-- GC Design System -->
+<link
+  rel="stylesheet"
+  href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@0.40.0/dist/gcds/gcds.css"
+/>
+<script
+  type="module"
+  src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@0.40.0/dist/gcds/gcds.esm.js"
+></script>
 
-    <!---------- GC Design System Components ---------->
-    <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of GC Design System Components. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-components/blob/main/CHANGELOG.md -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@1.9.2/dist/gcds/gcds.css"
-    />
-    <script
-      type="module"
-      src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@1.9.2/dist/gcds/gcds.esm.js"
-    ></script>
-
-    <!-- Custom styles -->
-    <!-- TODO: If needed, uncomment and link your custom CSS file here. -->
-    <link href="styles/css.css" rel="stylesheet">
-    <link href="styles/css_002.css" rel="stylesheet">
   </head>
 
   <body>
     <!---------- Header ---------->
-    <!-- TODO: Modify the lang-href to set the language toggle's URL. -->
-    <!-- TODO: Update the skip-to-href with the main content container's id. -->
     <gcds-header lang-href="en" skip-to-href="#main-content">
-      <!-- The slot="search" attribute adds the search component to the header. -->
       <gcds-search slot="search"></gcds-search>
 
       <!-- The slot="breadcrumb" attribute adds the breadcrumbs component to the header. -->
