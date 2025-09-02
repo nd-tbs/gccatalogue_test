@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-   
 <meta name="description" content="The GC Catalogue is a curated set of reusable digital and data policy tools, case studies and precedents to help unblock government teams trying to deliver secure, easy-to-use and trustworthy services">
 <meta name="keywords" content="catalogue, gc catalogue, GCcatalogue, gc catalog, canada catalogue, canada catalogue, Government of Canada, federal government, Canada SMS,
 policy catalogue of Canada">
@@ -14,13 +12,11 @@ policy catalogue of Canada">
    <title>Modernizing the Policy on Service and Digital</title>
 
     <!---------- GC Design System Utility ---------->
-    <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of the GC Design System utility framework. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-utility/blob/main/CHANGELOG.md -->
     <link
       rel="stylesheet"
       href="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-utility@1.9.2/dist/gcds-utility.min.css"
     />
 
-    <!---------- GC Design System Components ---------->
     <!-- TODO: Replace <version-number> with the latest version number to receive corresponding updates of GC Design System Components. All notable changes will be documented in the changelog: https://github.com/cds-snc/gcds-components/blob/main/CHANGELOG.md -->
     <link
       rel="stylesheet"
@@ -30,17 +26,12 @@ policy catalogue of Canada">
       type="module"
       src="https://cdn.design-system.alpha.canada.ca/@cdssnc/gcds-components@0.40.0/dist/gcds/gcds.esm.js"
     ></script>
-    
-    <!-- Custom styles -->
-    <!-- TODO: If needed, uncomment and link your custom CSS file here. -->
-    <!link rel=el="stylesheet" media="screen" href="../styles/homepage.css">
+
+    <link rel=el="stylesheet" media="screen" href="../styles/homepage.css">
   </head>
 
-  <body>
-    <!---------- Header ---------->
-    <!-- TODO: Modify the lang-href to set the language toggle's URL. -->
-    <!-- TODO: Update the skip-to-href with the main content container's id. -->
-    <gcds-header lang-href="https://nd-tbs.github.io/gccatalogue_test/blog/PSD_Reset_FR.html" skip-to-href="main-content">
+   <body>
+ <<gcds-header lang-href="#" skip-to-href="#main-content">
       <!-- The slot="search" attribute adds the search component to the header. -->
       <gcds-search slot="search"></gcds-search>
 
@@ -51,6 +42,8 @@ policy catalogue of Canada">
         <gcds-breadcrumbs-item href="#">Modernizing the Policy on Service and Digital</gcds-breadcrumbs-item>
       </gcds-breadcrumbs>
     </gcds-header>
+    
+        
 
     <!---------- Main content ---------->
     <!-- TODO: Confirm the id matches the "skip-to-href" id in the header. -->
@@ -61,8 +54,8 @@ policy catalogue of Canada">
       centered
       tag="main"
     >
-      <!-- TODO: Update the heading and text content. -->
-    <section style="
+
+<section style="
       background-color:#26374a;
       color:#fff;
       width:100vw;
@@ -86,21 +79,14 @@ policy catalogue of Canada">
             Resetting policy for a digital future
           </p>
         </div>
-    
-        <!-- Right side: image -->
-        <div style="flex:0 0 auto;">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Eo_circle_cyan_circle.svg" alt="Teal donut"
-               style="max-width:220px; height:auto; display:block;" />
-        </div>
       </div>
     </section>
+ <br>
       <section>
-        <!gcds-heading tag="h1">Modernizing the Policy on Service and Digital: Resetting policy for a digital future<!/gcds-heading>
         <gcds-text>
           The Office of the Chief Information Officer (OCIO) at Treasury Board of Canada Secretariat (TBS) is modernizing the <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32603">Policy on Service and Digital (PSD)</a>. This reset is a whole-of-government shift in how services are designed, funded, and delivered.
         </gcds-text>
       </section>
-
       <section>
         <gcds-heading tag="h2">On this page</gcds-heading>
         <!-- TODO: Adjust the link id's with the correct id for each section. -->
@@ -110,9 +96,6 @@ policy catalogue of Canada">
           </li>
           <li class="mb-75">
             <gcds-link href="#section-2">About the Policy on Service and Digital</gcds-link>
-          </li>
-          <li>
-            <gcds-link href="#section-3">Stay Tuned</gcds-link>
           </li>
         </ul>
       </section>
@@ -156,32 +139,43 @@ The PSD reset is more than a policy update — it’s about creating a digital g
         </gcds-text>
       </section>
 
-      <section id="section-3">
-        <gcds-heading tag="h2">Stay Tuned</gcds-heading>
-        <gcds-text>
-          Keep checking the page for updates. For more for information, please reach out to: <a href="mailto:PSDReset-PSNreinitialisee@tbs-sct.gc.ca">PSDReset-PSNreinitialisee@tbs-sct.gc.ca</a>. 
-        </gcds-text>
-      </section>
-
-      <gcds-date-modified>2025-09-02</gcds-date-modified>
+<section style="
+      background-color:#26374a;
+      color:#fff;
+      width:100vw;
+      margin-left:calc(-50vw + 50%);
+    ">
+      <div style="
+        max-width:1200px;
+        margin:0 auto;
+        padding:3rem 1rem;
+        display:flex;
+        flex-wrap:wrap;
+        align-items:center;
+        gap:2rem;
+      ">
+        <!-- Left side: text -->
+        <div style="flex:1 1 300px;">
+          <h1 style="margin:0 0 .5rem 0; font-weight:700; font-size:2rem; line-height:1.2;">
+            Stay Tuned
+          </h1>
+          <p style="margin:0; font-size:1.25rem; line-height:1.6; max-width:65ch;">
+            Keep checking the page for updates. For more for information, please reach out to: <a href="mailto:PSDReset-PSNreinitialisee@tbs-sct.gc.ca">PSDReset-PSNreinitialisee@tbs-sct.gc.ca</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+      
     </gcds-container>
 
-<gcds-footer
-  display="full"
-  contextual-heading="Contextual navigation"
-  contextual-links='{ "Why GC Notify": "#", "Features": "#", "Activity on GC Notify": "#" }'
->
 
 
     <div class="bg-blue">
       <div class="container px-10 py-24">
         <div class="flex justify-center">
           <div>
-            <h2 class="pb-0 text-white leading-tight font-bold text-center">
-              The GC Catalogue is a community
-            </h2>
             <p class="pt-10 pb-20 text-white text-center">
-            The GC Catalogue is a collaboration between the Office of the Chief Information of Canada and Service Canada. Together, we represent a community of public servants committed to supporting government. Share your thoughts and suggestions with us by e-mail <a href="mailto:servicedigital-servicesnumerique@tbs-sct.gc.ca" class="text-white">servicedigital-servicesnumerique@tbs-sct.gc.ca</a>.
+            The GC Catalogue is a collaboration between the Office of the Chief Information of Canada and Service Canada. Share your thoughts and suggestions with us by e-mail <a href="mailto:servicedigital-servicesnumerique@tbs-sct.gc.ca" class="text-white">servicedigital-servicesnumerique@tbs-sct.gc.ca</a>.
             </p>
           </div>
         </div>
@@ -197,7 +191,7 @@ The PSD reset is more than a policy update — it’s about creating a digital g
       </div>
     </div>
   </div>
-</gcds-footer>
+<gcds-date-modified>2025-09-02</gcds-date-modified>
 
   <script>
     function classToggle() {
