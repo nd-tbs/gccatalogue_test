@@ -35,18 +35,6 @@
     <gcds-header>
       lang-href="https://nd-tbs.github.io/gccatalogue_test/blog/PSD_Reset_FR.html"
       skip-to-href="#main-content"
-
-      <!-- The slot="banner" attribute adds the banner component to the header. -->
-      <gcds-banner>
-        <div class="product-title flex mt-10 mb-5 lg:mt-0 lg:mb-0">
-            <h1 class="leading-none lg:ml-4 mr-5 lg:pl-5 font-semibold inline-block top-0 text-brand pb-0">
-            GC Digital Policy
-            </h1>
-            <div class="bg-blue-lighter py-1 px-2 rounded-lg text-small">
-              Alpha
-            </div>
-          </div>
-      </gcds-banner>
       
       <!-- The slot="search" attribute adds the search component to the header. -->
       <gcds-search slot="search"></gcds-search>
@@ -58,7 +46,6 @@
         <gcds-breadcrumbs-item href="https://nd-tbs.github.io/gccatalogue_test/blog/PSDReset-EN.html">Modernizing the Policy on Service and Digital</gcds-breadcrumbs-item>
       </gcds-breadcrumbs>
     </gcds-header>  
-        
 
     <!---------- Main content ---------->
     <!-- TODO: Confirm the id matches the "skip-to-href" id in the header. -->
@@ -69,7 +56,6 @@
       centered
       tag="main"
     >
-
       <section style="background-color:#26374a; color:#fff; width:100vw; margin-left:calc(-50vw + 50%);">
         <div style="max-width:1200px; margin:0 auto; padding:3rem 1rem;">
       
@@ -96,28 +82,26 @@
         </div>
       </section>
       <br>
-      <section>
-        <div style="max-width:unset;">
-          <gcds-text>
+      <main id="main-content" style="--gcds-text-character-limit: 85ch;">
+        <section>
+         <gcds-text>
             The Office of the Chief Information Officer (OCIO) at Treasury Board of Canada Secretariat (TBS) is modernizing the <a href="https://www.tbs-sct.canada.ca/pol/doc-eng.aspx?id=32603">Policy on Service and Digital (PSD)</a>. This reset is a whole-of-government shift in how services are designed, funded, and delivered.
           </gcds-text>
-        </div>
-      </section>
-      <section>
-        <gcds-heading tag="h2">On this page</gcds-heading>
-        <!-- TODO: Adjust the link id's with the correct id for each section. -->
-        <ul class="list-disc mb-300">
-          <li class="mb-75">
-            <gcds-link href="#section-1">Why Change is Needed</gcds-link>
-          </li>
-          <li class="mb-75">
-            <gcds-link href="#section-2">About the Policy on Service and Digital</gcds-link>
-          </li>
-        </ul>
-      </section>
-
-   <section id="section-1">
-     <div style="max-width:unset;">
+        </section>
+        <section>
+          <gcds-heading tag="h2">On this page</gcds-heading>
+          <!-- TODO: Adjust the link id's with the correct id for each section. -->
+          <ul class="list-disc mb-300">
+            <li class="mb-75">
+              <gcds-link href="#section-1">Why Change is Needed</gcds-link>
+            </li>
+            <li class="mb-75">
+              <gcds-link href="#section-2">About the Policy on Service and Digital</gcds-link>
+            </li>
+          </ul>
+        </section>
+  
+     <section id="section-1">
        <gcds-heading tag="h2">Why Change is Needed</gcds-heading>
        <gcds-text>
            Canadians expect government services that are simple, secure, and easy to use. But too often, outdated systems and rules make services harder to deliver — and harder for people to access. 
@@ -135,30 +119,28 @@
        <gcds-text>
       The PSD reset is about more than updating policy. It’s about building a government that delivers better services today and is ready for tomorrow. 
               </gcds-text>
-     </div>
-  </section>
-    
-  <section id="section-2">
-   <div style="max-width:unset;">
-      <gcds-heading tag="h2">About the Policy on Service and Digital</gcds-heading>
-      <gcds-text>
-       The Policy on Service and Digital (PSD) is the Government of Canada’s main policy for how services are designed and delivered. It sets expectations for departments on everything from client experience to digital infrastructure, so that services work better for people. 
-       </gcds-text>
-       <gcds-text>
-        The reset is focused on: 
-        <ul class="list-disc ml-5">
-                <li class="pt-4"><strong>Simple, secure, easy-to-use services</strong> for Canadians </li>
-               <li class="pt-4"><strong>Stronger digital foundations</strong> so government systems work together</li>
-               <li class="pt-4"><strong>Better outcomes</strong> by reducing red tape and focusing on results</li>
-         <li class="pt-4"> <strong>A future-ready policy</strong> that protects Canada’s control over its data, technology, and talent</li>
-        </ul>
-       </gcds-text>
-       <gcds-text>
-          The PSD reset is more than a policy update — it’s about creating a digital government that works for today and is ready for tomorrow. 
-        </gcds-text>
-     </div>
     </section>
-    <section style="background-color:#26374a; color:#fff; width:100vw; margin-left:calc(-50vw + 50%);">
+      
+    <section id="section-2">
+        <gcds-heading tag="h2">About the Policy on Service and Digital</gcds-heading>
+        <gcds-text>
+         The Policy on Service and Digital (PSD) is the Government of Canada’s main policy for how services are designed and delivered. It sets expectations for departments on everything from client experience to digital infrastructure, so that services work better for people. 
+         </gcds-text>
+         <gcds-text>
+          The reset is focused on: 
+          <ul class="list-disc ml-5">
+                  <li class="pt-4"><strong>Simple, secure, easy-to-use services</strong> for Canadians </li>
+                 <li class="pt-4"><strong>Stronger digital foundations</strong> so government systems work together</li>
+                 <li class="pt-4"><strong>Better outcomes</strong> by reducing red tape and focusing on results</li>
+           <li class="pt-4"> <strong>A future-ready policy</strong> that protects Canada’s control over its data, technology, and talent</li>
+          </ul>
+         </gcds-text>
+         <gcds-text>
+            The PSD reset is more than a policy update — it’s about creating a digital government that works for today and is ready for tomorrow. 
+          </gcds-text>
+       </div>
+      </section>
+      <section style="background-color:#26374a; color:#fff; width:100vw; margin-left:calc(-50vw + 50%);">
         <div style="max-width:1200px; margin:0 auto; padding:3rem 1rem;">
       
           <!-- Side-by-side, no wrap -->
@@ -181,8 +163,8 @@
             </div>
       
           </div>
-        </div>
-      </section>
+        </section>
+      </main>
      <gcds-date-modified>2025-09-02</gcds-date-modified>  
     </gcds-container>
   
