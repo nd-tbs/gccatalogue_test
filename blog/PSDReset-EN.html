@@ -65,12 +65,12 @@ policy catalogue of Canada">
 
       <section style="background-color:#26374a; color:#fff; width:100vw; margin-left:calc(-50vw + 50%);">
         <div style="max-width:1200px; margin:0 auto; padding:3rem 1rem;">
-      
-          <!-- Side-by-side, no wrap -->
-          <div style="display:flex; align-items:center; justify-content:space-between; gap:2rem; flex-wrap:nowrap;">
+        
+            <!-- Flex row with equal height -->
+                <div style="display:flex; align-items:stretch; justify-content:space-between; gap:2rem;">
       
             <!-- Left: text -->
-            <div style="flex:1 1 auto; min-width:0;">
+            <div style="flex:1 1 auto; min-width:0; display:flex; flex-direction:column; justify-content:center;">
               <h1 style="margin:0 0 .5rem 0; font-weight:700; font-size:2rem; line-height:1.2;">
                 Modernizing the Policy on Service and Digital
               </h1>
@@ -79,15 +79,17 @@ policy catalogue of Canada">
               </p>
             </div>
       
-            <!-- Right: image (kept in bounds) -->
-            <div style="flex:0 1 320px; max-width:320px;">
-              <img src="https://github.com/nd-tbs/gccatalogue_test/blob/065e514bbf5728886f0cbf3d173dae42ede010df/images/PSDResetLogo.png?raw=true" alt="Policy on Service and Digital reset logo"
-                   style="width:100%; height:auto; display:block;">
-            </div>
+            <!-- Right: image constrained to text height -->
+              <div style="flex:0 0 auto; display:flex; align-items:center;">
+                <img src="https://github.com/nd-tbs/gccatalogue_test/blob/065e514bbf5728886f0cbf3d173dae42ede010df/images/PSDResetLogo.png?raw=true" 
+                  alt="Policy on Service and Digital reset logo"
+                  style="max-height:100%; height:auto; width:auto; display:block;">
+              </div>
       
           </div>
         </div>
       </section>
+      <br>
       <section>
         <div style="max-width:unset;">
           <gcds-text>
@@ -139,8 +141,8 @@ policy catalogue of Canada">
        <gcds-text>
         The reset is focused on: 
         <ul class="list-disc ml-5">
-                <li class="pt-4"><strong>Simple, secure, easy-to-use services</strong>for Canadians </li>
-               <li class="pt-4"><strong>Stronger digital foundations</strong>so government systems work together</li>
+                <li class="pt-4"><strong>Simple, secure, easy-to-use services</strong> for Canadians </li>
+               <li class="pt-4"><strong>Stronger digital foundations</strong> so government systems work together</li>
                <li class="pt-4"><strong>Better outcomes</strong> by reducing red tape and focusing on results</li>
          <li class="pt-4"> <strong>A future-ready policy</strong> that protects Canada’s control over its data, technology, and talent</li>
         </ul>
@@ -175,26 +177,8 @@ policy catalogue of Canada">
           </div>
         </div>
       </section>
-          
+     <gcds-date-modified>2025-09-02</gcds-date-modified>  
     </gcds-container>
-    <!--   <div class="bg-gray">
-        <div class="container px-10 py-12">
-          <div class="flex py-10 justify-end">
-            <img alt="Symbol of the Government of Canada / Symbole du gouvernement du Canada" src="../images/goc--footer-logo.svg" width="150">
-          </div>
-        </div>
-      </div> -->
-    <gcds-date-modified>2025-09-02</gcds-date-modified>
-
-<!--   <script>
-    function classToggle() {
-      const nav = document.querySelector(".mobile-nav");
-      const arrow = document.querySelector(".mobile-arrow");
-      nav.classList.toggle("hidden");
-      arrow.classList.toggle("flip");
-    }
-    document.querySelector("#menu").addEventListener("click", classToggle);
-  </script> -->
   
     <!---------- Footer ---------->
     <!-- TODO: Update or remove the contextual footer heading and links as needed. -->
